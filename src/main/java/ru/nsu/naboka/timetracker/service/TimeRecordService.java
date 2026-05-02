@@ -14,7 +14,7 @@ import java.util.List;
 public class TimeRecordService {
     private final TimeRecordMapper timeRecordMapper;
 
-    public TaskTimeRecord CreateRecord(TimeRecordDto dto){
+    public TaskTimeRecord createRecord(TimeRecordDto dto){
         TaskTimeRecord record = new TaskTimeRecord();
         record.setEmployeeId(dto.getEmployeeId());
         record.setStartTime(dto.getStartTime());

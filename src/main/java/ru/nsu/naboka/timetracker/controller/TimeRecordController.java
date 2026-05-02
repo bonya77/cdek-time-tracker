@@ -19,7 +19,7 @@ public class TimeRecordController {
 
     @PostMapping
     public TaskTimeRecord createRecord(@Valid @RequestBody TimeRecordDto dto){
-        return timeRecordService.CreateRecord(dto);
+        return timeRecordService.createRecord(dto);
     }
 
     @GetMapping
